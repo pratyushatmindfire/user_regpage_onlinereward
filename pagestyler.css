@@ -28,9 +28,44 @@ body
    	transition: ease-in 0.4s;
 }
 
+#detail_label
+{
+	text-align: left;
+    font-size: 1.2em;
+    color: white;
+    font-family: unset;
+    font-weight: lighter;
+}
 
+#gender_options
+{
+	display: flex;
+	color: white;
+}
 
+#detail_block
+{
+	width: 20%;
+	margin-left: 1%;
+	margin-right: 1%;
+}
 
+#name_block, #contact_block, #metrics_block, #address_block, #personal_block
+{
+	display: flex;
+}
+
+.form-control
+{
+	background-color: #ffffff1f;
+	border: none;
+	color: wheat;
+}
+
+.form-check-label
+{
+	color: white;
+}
 /*Fullscreen*/
 @media (max-width: 40rem)
 {
