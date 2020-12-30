@@ -27,8 +27,9 @@ body
 	text-align: left;
     font-size: 1.2em;
     color: white;
-    font-family: unset;
+    font-family: -webkit-pictograph;
     font-weight: lighter;
+    margin-bottom: 2%;
 }
 
 #gender_options
@@ -56,16 +57,61 @@ body
 	margin-bottom: 2%;
 }
 
+.popup
+{
+	padding-right: var(--bs-gutter-x,.75rem);
+    padding-left: var(--bs-gutter-x,.75rem);
+    margin-right: auto;
+    margin-left: auto;
+}
+
+label
+{
+	font-family: system-ui;
+}
+
 .form-control
 {
+	display: block;
+    width: 100%;
+    padding: .375rem 0rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    background-clip: padding-box;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 	background-color: #ffffff1f;
 	border: none;
 	color: wheat;
 }
 
-.form-check-label
+.interest_holder
+{
+	margin-right: auto;
+    margin-left: auto;
+    width: 100%;
+}
+
+.labeltext
 {
 	color: white;
+    font-family: -webkit-pictograph;
+}
+
+.option_input
+{
+	width: 1em;
+    height: 1em;
+    margin-top: .25em;
+    vertical-align: top;
+    background-color: #fff;
+    border: 1px solid rgba(0,0,0,.25);
+    transition: background-color .15s ease-in-out,background-position .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 }
 
 #single_interest_element
@@ -77,6 +123,13 @@ body
 /*Small*/
 @media (max-width: 40rem)
 {
+	body
+	{
+		background-image: none;
+		background-color: black;
+	}
+
+
 	#popper
 	{
 		transition: 0.1s;
@@ -110,8 +163,10 @@ body
 		transition: 0.5s;
     	display: flex;
     	flex-wrap: wrap;
-    	justify-content: space-evenly;
+    	justify-content: center;
     	margin-bottom: 2%;
+    	padding-left: 7%;
+    	padding-right: 7%;
 	}
 
 	#single_interest_element
@@ -231,6 +286,8 @@ body
     	flex-wrap: wrap;
     	justify-content: center;
     	margin-bottom: 2%;
+    	padding-left: 7%;
+    	padding-right: 7%;
 	}
 
 	#detail_block
@@ -318,7 +375,7 @@ body
 
 	#single_interest_element
 	{
-		width: 10%;
+		width: 16%;
 		text-align: left;
 	}
 
@@ -344,7 +401,7 @@ body
 		transition: 0.5s;
     	display: flex;
     	flex-wrap: wrap;
-    	justify-content: space-around;
+    	justify-content: center;
     	margin-bottom: 2%;
     	padding-left: 7%;
     	padding-right: 7%;
