@@ -1,6 +1,6 @@
 body
 {
-	background-image: url('NYC_Skyline.jpg');
+	background-image: url('https://192.168.1.108:450/assets/NYC_Skyline.jpg');
 	background-attachment:fixed;
 	background-repeat: no-repeat;
   	background-position: center;
