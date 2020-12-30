@@ -11,6 +11,42 @@ body
   	backdrop-filter: blur(8px) brightness(50%);
 }
 
+.submitButton
+{
+	color: #28a745;
+    background-color: transparent;
+    background-image: none;
+    border-color: #28a745;
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border: 0.15em solid;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: .25rem;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    margin-bottom: 2em;
+}
+
+.submitButton:hover
+{
+	color: #fff;
+    background-color: #28a745;
+    border-color: #28a745;
+}
+
+.submitButton:focus
+{
+	outline: none;
+}
+
 #logo
 {
 	width: 12vw;
@@ -70,7 +106,7 @@ label
 	font-family: system-ui;
 }
 
-.form-control
+.input-control
 {
 	display: block;
     width: 100%;
