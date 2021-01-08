@@ -1,166 +1,137 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>User Registration Form</title>
-	<!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous"> -->
-    <link rel="stylesheet" href="https://192.168.1.108:450/css/pagestyler.css">
-    <link rel="stylesheet" href="./css/pagestyler.css">
-</head>
-<body id="main">
-	<div id="popper" class="popup">
-		<div id="banner"><img id="logo" src="https://192.168.1.108:450/assets/mindfire_logo_transparent.png"></div>
-		<div id="form_body">
-			<form>
-				<div id="name_block">
-					<div id="detail_block">
-						<h3 id="detail_label">First Name</h3>
-  						<input type="text" class="input-control">
-					</div>
-
-					<div id="detail_block">
-						<h3 id="detail_label">Middle Name</h3>
-  						<input type="text" class="input-control">
-					</div>
-
-					<div id="detail_block">
-						<h3 id="detail_label">Last Name</h3>
-  						<input type="text" class="input-control">
-					</div>
-				</div>
-
-				<div id="contact_block">
-					<div id="detail_block">
-						<h3 id="detail_label">Phone Number</h3>
-  						<input type="text" class="input-control">
-					</div>
-
-					<div id="detail_block">
-						<h3 id="detail_label">Email ID</h3>
-  						<input type="text" class="input-control">
-					</div>
-
-					<div id="detail_block">
-						<h3 id="detail_label">Password</h3>
-  						<input type="password" class="input-control">
-					</div>
-				</div>
-
-				<div id="metrics_block">
-					<div id="detail_block_DOB">
-						<h3 id="detail_label">Date of Birth</h3>
-  						<input type="date" class="input-control">
-					</div>
-
-					<div id="detail_block_gender">
-						<h3 id="detail_label">Gender</h3>
-						<div id="gender_options">
-							<div id="gender_options_detail">
-  								<input type="radio" name="gender" id="male" class="option_input">
-  								<label for="male" class="wheat_label">Male</label><br>
-  							</div>
-
-  							<div id="gender_options_detail">
-  								<input type="radio" name="gender" id="female" class="option_input">
-  								<label for="female" class="wheat_label">Female</label><br>
-  							</div>
-
-  							<div id="gender_options_detail">
-  								<input type="radio" name="gender" id="others" class="option_input">
-  								<label for="others" class="wheat_label">Others</label><br>
-  							</div>
-  						</div>
-					</div>
-				</div>
-
-				<div id="address_block">
-					<div id="detail_block_curaddr">
-						<h3 id="detail_label">Current Address</h3>
-  						<input type="text" class="input-control">
-					</div>
-
-					<div id="detail_block_permaddr">
-						<h3 id="detail_label">Permanent Address</h3>
-  						<input type="text" class="input-control">
-					</div>
-				</div>
-
-				<div id="region_block">
-					<div id="detail_block_1">
-						<h3 id="detail_label">City</h3>
-  						<input type="text" class="input-control">
-					</div>
-
-					<div id="detail_block_2">
-						<h3 id="detail_label">State</h3>
-  						<input type="text" class="input-control">
-					</div>
-
-					<div id="detail_block_3">
-						<h3 id="detail_label">Country</h3>
-  						<input type="text" class="input-control">
-					</div>
-
-					<div id="detail_block_4">
-						<h3 id="detail_label">Zipcode</h3>
-  						<input type="text" class="input-control">
-					</div>
-				</div>
-
-
-				<div id="personal_block">
-
-					<div id="interests_container" class="interest_holder">
-						<div id="single_interest_element">
-  							<input class="option_input" type="checkbox" id="flexSwitchCheckChecked">
-  							<label class="labeltext" for="flexSwitchCheckChecked">Sports</label>
-						</div>
-
-						<div id="single_interest_element">
-  							<input class="option_input" type="checkbox" id="flexSwitchCheckChecked">
-  							<label class="labeltext" for="flexSwitchCheckChecked">Fashion</label>
-						</div>
-
-						<div id="single_interest_element">
-  							<input class="option_input" type="checkbox" id="flexSwitchCheckChecked">
-  							<label class="labeltext" for="flexSwitchCheckChecked">Music</label>
-						</div>
-
-						<div id="single_interest_element">
-  							<input class="option_input" type="checkbox" id="flexSwitchCheckChecked">
-  							<label class="labeltext" for="flexSwitchCheckChecked">Travel</label>
-						</div>
-
-						<div id="single_interest_element">
-  							<input class="option_input" type="checkbox" id="flexSwitchCheckChecked">
-  							<label class="labeltext" for="flexSwitchCheckChecked">Art</label>
-						</div>
-
-						<div id="single_interest_element">
-  							<input class="option_input" type="checkbox" id="flexSwitchCheckChecked">
-  							<label class="labeltext" for="flexSwitchCheckChecked">Food</label>
-						</div>
-
-						<div id="single_interest_element">
-  							<input class="option_input" type="checkbox" id="flexSwitchCheckChecked">
-  							<label class="labeltext" for="flexSwitchCheckChecked">Deco</label>
-						</div>
-
-						<div id="single_interest_element">
-  							<input class="option_input" type="checkbox" id="flexSwitchCheckChecked">
-  							<label class="labeltext" for="flexSwitchCheckChecked">Abstract</label>
-						</div>
-					</div>
-				</div>
-			</form>
-			
-		</div>
-
-		<div id="footer">
-			<button type="button" class="submitButton">Submit</button>
-		</div>
-
-		
-	</div>
-</body>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Registration Form</title>
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous"> -->
+    <!--     <link rel="stylesheet" href="https://192.168.1.108:450/css/pagestyler.css"> -->
+    <link rel="stylesheet" href="../css/pagestyler.css">
+  </head>
+  <body id="main">
+    <div id="popper" class="popup">
+      <div id="banner"><img id="logo" src="../assets/mindfire_logo_transparent.png"></div>
+      <div id="form_body">
+        <form>
+          <div id="name_block">
+            <div id="detail_block">
+              <h3 id="detail_label">First Name</h3>
+              <input type="text" class="input-control">
+            </div>
+            <div id="detail_block">
+              <h3 id="detail_label">Middle Name</h3>
+              <input type="text" class="input-control">
+            </div>
+            <div id="detail_block">
+              <h3 id="detail_label">Last Name</h3>
+              <input type="text" class="input-control">
+            </div>
+          </div>
+          <div id="contact_block">
+            <div id="detail_block">
+              <h3 id="detail_label">Phone Number</h3>
+              <input type="text" class="input-control">
+            </div>
+            <div id="detail_block">
+              <h3 id="detail_label">Email ID</h3>
+              <input type="text" class="input-control">
+            </div>
+            <div id="detail_block">
+              <h3 id="detail_label">Password</h3>
+              <input type="password" class="input-control">
+            </div>
+          </div>
+          <div id="metrics_block">
+            <div id="detail_block_DOB">
+              <h3 id="detail_label">Date of Birth</h3>
+              <input type="date" class="input-control">
+            </div>
+            <div id="detail_block_gender">
+              <h3 id="detail_label">Gender</h3>
+              <div id="gender_options">
+                <div id="gender_options_detail">
+                  <input type="radio" name="gender" id="male" class="option_input">
+                  <label for="male" class="wheat_label">Male</label><br>
+                </div>
+                <div id="gender_options_detail">
+                  <input type="radio" name="gender" id="female" class="option_input">
+                  <label for="female" class="wheat_label">Female</label><br>
+                </div>
+                <div id="gender_options_detail">
+                  <input type="radio" name="gender" id="others" class="option_input">
+                  <label for="others" class="wheat_label">Others</label><br>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="address_block">
+            <div id="detail_block_curaddr">
+              <h3 id="detail_label">Current Address</h3>
+              <input type="text" class="input-control">
+            </div>
+            <div id="detail_block_permaddr">
+              <h3 id="detail_label">Permanent Address</h3>
+              <input type="text" class="input-control">
+            </div>
+          </div>
+          <div id="region_block">
+            <div id="detail_block_1">
+              <h3 id="detail_label">City</h3>
+              <input type="text" class="input-control">
+            </div>
+            <div id="detail_block_2">
+              <h3 id="detail_label">State</h3>
+              <input type="text" class="input-control">
+            </div>
+            <div id="detail_block_3">
+              <h3 id="detail_label">Country</h3>
+              <input type="text" class="input-control">
+            </div>
+            <div id="detail_block_4">
+              <h3 id="detail_label">Zipcode</h3>
+              <input type="text" class="input-control">
+            </div>
+          </div>
+          <div id="personal_block">
+            <div class="interest_holder">
+              <div id="single_interest_element">
+                <input class="option_input" type="checkbox">
+                <label class="labeltext">Sports</label>
+              </div>
+              <div id="single_interest_element">
+                <input class="option_input" type="checkbox">
+                <label class="labeltext">Fashion</label>
+              </div>
+              <div id="single_interest_element">
+                <input class="option_input" type="checkbox">
+                <label class="labeltext">Music</label>
+              </div>
+              <div id="single_interest_element">
+                <input class="option_input" type="checkbox">
+                <label class="labeltext">Travel</label>
+              </div>
+              <div id="single_interest_element">
+                <input class="option_input" type="checkbox">
+                <label class="labeltext">Art</label>
+              </div>
+              <div id="single_interest_element">
+                <input class="option_input" type="checkbox">
+                <label class="labeltext">Food</label>
+              </div>
+              <div id="single_interest_element">
+                <input class="option_input" type="checkbox">
+                <label class="labeltext">Deco</label>
+              </div>
+              <div id="single_interest_element">
+                <input class="option_input" type="checkbox">
+                <label class="labeltext">Abstract</label>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div id="footer">
+        <button type="button" class="submitButton">Submit</button>
+      </div>
+    </div>
+  </body>
 </html>
